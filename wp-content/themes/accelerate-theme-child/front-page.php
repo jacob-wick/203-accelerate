@@ -63,6 +63,19 @@ get_header(); ?>
 						<?php endwhile; //end of the loop. ?>
 					<?php wp_reset_query(); ?>
 			</div><!-- .blog-post -->
+ 
+	<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+		<div id="secondary" class="widget-area front" role="complementary">
+			<h4>Recent Tweet</h4>
+			<?php dynamic_sidebar( 'sidebar-2' ); ?>
+
+			<div class="read-more-link">
+				<a href="#"><span>Follow Us &#x203a; </span></a>
+			</div>
+		</div>
+	<?php endif ?>
+
+
 		</div><!-- .site-content -->
 	</section><!-- .recent-posts -->	
 

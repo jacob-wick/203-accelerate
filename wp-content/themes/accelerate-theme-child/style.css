@@ -28,24 +28,24 @@ ul {
   background: none repeat scroll 0 0 #45ac9d;
 }
 
-.button {
+input[type="button"], .button {
 	background: #45ac9d;
 }
 
 .blog-post {
-	width: 50%;
+	width: 48%;
 	float: left;
 	margin-bottom: 2em;
 }
 
-.blog-post h4 {
+.blog-post h4, .widget-area h4 {
 	font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 	color: #a6a6a6;
 	text-transform: uppercase;
 	margin: 2em 0 .5em;
 }
 
-.blog-post h3 {
+.blog-post h3, .widget-area h3 {
 	font-size: 1.5em;
 }
 
@@ -70,7 +70,7 @@ ul {
 
 ul.homepage_featured-work {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	margin: 0;
@@ -83,6 +83,27 @@ ul.homepage_featured-work {
 
 .individual_featured-work h2 {
 	text-align: center;
+}
+
+/* Front Page Twitter Widget */
+
+div.widget-area.front {
+	width: 48%;
+	float: right;
+}
+
+.fts-tweeter-wrap .tweeter-info {
+	border-bottom: none;
+}
+
+/* Mailchimp Signup Widget */
+
+.mailchimp-button input[type="submit"] {
+	background: #45ac9d;
+	font-family: inherit;
+	padding: 0;
+	width: 100%;
+	text-transform: uppercase;
 }
 
 /* Case Studies Styles */
@@ -144,6 +165,128 @@ div.blurb_case-studies {
 	width: 40%;
 }
 
+/* Contact Form */
+
+nf-field:nth-child(1) {
+	width: 48%;
+	float: left;
+}
+
+nf-field:nth-child(2) {
+	width: 48%;
+	float: right;
+}
+
+.single-line-text-name, .single-line-text-email {
+}
+
+.button-send {
+	float: right;
+}
+
+/* About Page */
+
+div.about {
+	background: url("img/taxi-photo.jpg") no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
+	width: 100%;
+	height: 14rem;
+	margin-bottom: 2rem;
+}
+
+.about p {
+	width: 50%;
+	font-size: 1.3rem;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+
+
+
+section.bottom-content {
+	width: 50%;
+	margin: 0 auto 4rem auto;
+	text-align: center;
+}
+
+.bottom-content h4 {
+	text-transform: uppercase;
+	font-size: 1rem;
+}
+
+.bottom-content p {
+	font-size: 0.9rem;
+}
+
+li.individual-service {
+	display: inline-block;
+	width: 100%;
+	margin: 2rem 0;
+}
+
+.individual-service figure {
+	width: 20%;
+}
+
+.individual-service div {
+	width: 70%;
+}
+
+.odd figure {
+	float: left;
+}
+
+.odd div {
+	float: right;
+}
+
+.even figure {
+	float: right;
+}
+
+.even div {
+	float: left;
+}
+
+div.about-bottom {
+	width: 50%;
+	margin: 0 auto;
+	padding: 2rem 0;
+}
+
+.about-bottom h3 {
+	float: left;
+	margin: 1rem;
+}
+
+.about-bottom button {
+	float: right;
+}
+
+/* 404 Page */
+
+.fourohfour {
+	background: url("img/nacho-stick.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	width: 100%;
+	max-width: 100vw;
+	height: 80vh;
+}
+
+.fourohfour div {
+	margin: 0 auto;
+	max-width: 65%;
+	text-align: center;
+	padding: 25% 0 0 0;
+}
+
+.fourohfour h1 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	font-size: 2.4rem;
+	color: #fff;
+	background: rgba(69, 172, 157, 0.8);
+}
+
 /* Footer */
 
 .site-footer a::before {
@@ -186,14 +329,14 @@ ul.social-media-menu {
 	padding: 0.2rem;
 }
 
-a[href*="facebook"]::before {
+.social-media-menu a[href*="facebook"]::before {
 	content: "\f39e";
 }
 
-a[href*="twitter"]::before {
+.social-media-menu a[href*="twitter"]::before {
 	content: "\f099";
 }
 
-a[href*="linkedin"]::before {
+.social-media-menu a[href*="linkedin"]::before {
 	content: "\f0e1";
 }
